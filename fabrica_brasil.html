@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<!-- Pagina web Portfolio: Gonzalo Arechavala -->
+<!-- Esta pagina utiliza solo HTML y CSS, tanto propio como de Bootstrap -->
+
+<html>
+
+<head>
+  <!-- Cabecera HTML -->
+  <meta charset="utf-8">
+  <title>UpgradeCarS - Práctica Portfolio: Gonzalo Arechavala</title>
+  <!-- Enlaces a estilos -->
+  <link rel="icon" type="image/x-icon" href="./images/GAPlogo.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- Enlaces a fuentes de Google. Carga en CSS Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600;700&family=Mochiy+Pop+P+One&display=swap">
+  <!-- Enlaces para iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Cabecera página web -->
+    <header>
+        <!-- Barra de navegación responsive con menú hamburguesa -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <!-- Logotipo: Cambia de tamaño por CSS al cambiar las dimensiones de las pantallas -->
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="./images/upgradecar.svg" alt="UpgradeCarS" id="logotipo"
+                        class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Boton hamburguesa para pantalla pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de la página -->
+                <div class="collapse navbar-collapse nav justify-content-end px-3" id="navbarNav">
+                    <ul class="navbar-nav nav-pills fw-bolder col-12">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="fabrica_alemania.html">
+                                <ul class="elementos-menu">
+                                    <li>Alemania </li>
+                                    <li><span>(1938-1978)</span></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-activado" href="fabrica_brasil.html">
+                                <ul class="elementos-menu">
+                                    <li>Brasil </li>
+                                    <li><span>(1959-1996)</span></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fabrica_mexico.html">
+                                <ul class="elementos-menu">
+                                    <li>México </li>
+                                    <li><span>(1967-2003)</span></li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle elemento-menu-toggle" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="vw-escarabajo_001.html">1971</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_002.html">1972</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_003.html">1973</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_004.html">1974</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_005.html">1975</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_006.html">1976</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_007.html">1977</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_008.html">1978</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_009.html">1979</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_010.html">1980</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_011.html">1981</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_012.html">1982</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_013.html">1983</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_014.html">1984</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_015.html">1985</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_016.html">1986</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_017.html">1987</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_018.html">1988</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_019.html">1989</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_020.html">1990</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_021.html">1991</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_022.html">1992</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_023.html">1993</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_024.html">1994</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                <ul class="elementos-menu">
+                                    <li>Contacto</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Banner titulo de la página -->
+        <div class="row fondodiv img-fab-brasil">
+            <h1>Reacondicionado Vintage VW Escarabajo</h1>
+            <p class="pretitulo">Piezas originales o de alta calidad con garantía de 24 meses</p>
+            <div>
+                <a class="pretitulo" href="contacto.html">
+                    <button type="button" class="btn btn-danger">¡Quiero uno!</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <main class="container">
+
+        <!-- Columnas de la página: pc 3 / tablet 2 / movil 1 -->
+        <div class="col-12">
+            <div class="row">
+
+                <!-- Sección texto ... -->
+                <section class="col-12 contenido-articulo">
+                    <article>
+                        <div class="">
+                            <h2 class="mb-3">Fábrica de Brasil</h2>
+                        </div>
+                        <div>
+                            <p class="entradilla">Los primeros 30 autos de este tipo
+                                llegaron al puerto de Santos en septiembre de 1950. Poco después se ha habían vendido
+                                todos, por el triple del precio esperado.</p>
+
+                            <p>Beetle, Escarabajo, Vocho, Pichirilo... ¿Quién no conoce el pequeño auto insignia de
+                                Volkswagen? Fusca, le llaman hace 60 años en Brasil. Los primeros 30 autos de este tipo
+                                llegaron al puerto de Santos en septiembre de 1950. Poco después se ha habían vendido
+                                todos, por el triple del precio esperado.</p>
+
+                            <p>Era el principio de una historia de éxitos. Tres años más tarde, el 23 de marzo de 1953,
+                                se instalaba Volkswagen do Brasil con apenas 12 empleados. Del pequeño almacén en el
+                                barrio de Ipiranga, en São Paulo, salieron Escarabajos y furgonetas, con piezas
+                                importadas desde Alemania, que poco a poco fueron sustituidas por componentes de
+                                producción brasileña.</p>
+
+                            <p>En los 60 años que siguen Volkswagen ha producido más de 20 millones de automóviles en
+                                Brasil. El país sudamericano se ha convertido en el segundo mercado de la empresa
+                                alemana, después de China. Según un estudio de la Asociación Brasileña de Anunciantes
+                                (ABA), Volkswagen es la marca más conocida por el público brasileño. Además, con 24.000
+                                empleados, es el segundo empleador enre los fabricantes de automóviles, después de
+                                General Motors.</p>
+
+                            <p class="entradilla">Primera fábrica en el extranjero</p>
+
+                            <p>La primera fábrica de São Paulo era apenas una planta de montaje de piezas alemanas,
+                                como las que BMW y Audi instalan ahora mismo en América Latina, para escapar a los
+                                obstáculos aduaneros. Pero en los años 50 todo era distinto.</p>
+
+                            <p>Era la época de la industrialización brasileña. El presidente Juscelino Kubitschek
+                                impulsó la construcción de la nueva capital, Brasilia, y aprobó grandes proyectos
+                                viales, mientras la industria automovilística florecía. En 1956 Kubitschek estableció
+                                las reglas del juego: Los fabricantes de automóviles tendrían que arreglárselas, tras
+                                una corta etapa inicial, sin la importación de piezas desde el extranjero.</p>
+
+                            <p>Ese mismo año, Volkswagen comenzó a armar su primera fábrica, con todas las de la ley,
+                                fuera de Alemania, en São Bernardo do Campo, en las afueras de São Paulo. En septiembre
+                                de 1957 salía al mercado la primera furgoneta VW con un 50 por ciento de piezas
+                                fabricadas en Brasil. Dos años más tarde, saldría el primer Escarabajo o "Fusca", que
+                                resultó brasileño en un 95 por ciento.</p>
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <main class="container">
+
+        <!-- Banner titulo de la página -->
+        <div class="row otros-modelos">
+            <h1>Otras fábricas del Escarabajo:</h1>
+        </div>
+
+
+        <!-- Columnas de la página: pc 3 / tablet 2 / movil 1 -->
+        <div class="col-12">
+            <div class="row">
+
+                <section class="col-6 p-2" id="imgCoches">
+                    <article class="card bg-dark">
+                        <div class="div-con-imagen">
+                            <div class="imagen-info">
+                                <h2 class="mb-3">Fábrica de México</h2>
+                                <a href="fabrica_mexico.html" class="btn btn-outline-white py-2 px-4 btn-mas-fotos">Más
+                                    información</a>
+                            </div>
+                            <img src="./images/fabrica_mexico.jpg" alt="Fábrica de México" class="img-fluid">
+                        </div>
+                    </article>
+                </section>
+
+                <section class="col-6 p-2" id="imgCoches">
+                    <article class="card bg-dark">
+                        <div class="div-con-imagen">
+                            <div class="imagen-info">
+                                <h2 class="mb-3">Fábrica de Alemania</h2>
+                                <a href="fabrica_alemania.html" class="btn btn-outline-white py-2 px-4 btn-mas-fotos">Más
+                                    información</a>
+                            </div>
+                            <img src="./images/fabrica_alemania.jpg" alt="Fábrica de Alemania" class="img-fluid">
+                        </div>
+                    </article>
+                </section>
+
+    </main>
+
+  <!-- Pie de la página web -->
+  <footer class="m-5">
+
+    <!-- Logo pie de página -->
+    <div class="footer-content d-flex justify-content-center">
+      <img class="footer-img m-3" src='./images/upgradecar.svg' id="logopie">
+    </div>
+
+    <!-- Div de Newsletter -->
+    <div class="container">
+      <div>
+        <h3 class="text-center newsletter">Subscríbete a nuestra Newsletter</h3>
+      </div>
+      <div class="row align-items-start">
+
+        <!-- Columna Izquierda -->
+        <div class="col-0 col-lg-4 col-md-2 col-sm-1"></div>
+
+        <!-- Pintamos un formulario en la columna central-->
+        <div class="col-12 col-lg-4 col-md-8 col-sm-10 mt-1 mb-5">
+          <form class="form-inline" method="post" action="#">
+            <div class="col-12 col">
+              <input type="checkbox"> Acepto <a href="aviso-politica.html" class="aviso-politica"> Aviso legal y Política
+                de privacidad.</a>
+            </div>
+            <div class="row">
+              <div class="form-group col-8 contacto-news"><input class="form-control" type="email" name="email"
+                  placeholder="Escribe tu Email"></div>
+              <div class="form-group col-4 contacto-news"><button class="btn btn-enviar" type="button">Subscribirse</button></div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="col-0 col-lg-4 col-md-2 col-sm-1"></div>
+      </div>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-content d-flex justify-content-center">
+      <p class="footer-text m-2">
+        Síguenos en: <a href="https://www.facebook.com/VwKaferClubEspana/" target="blanc"
+          class="text-white text-decoration-none mx-3">
+          <i class="bi bi-facebook"></i> Facebook</a> / <a href="https://www.instagram.com/vw.escarabajo/?hl=es"
+          target="blanc" class="text-white text-decoration-none mx-3"><i class="bi bi-instagram"></i> Instagram</a>
+      </p>
+    </div>
+
+    <!-- Derechos y politicas -->
+    <div class="footer-content d-flex justify-content-center">
+      <p class="footer-text m-2">
+        2021 UpgradeCarS | Todos los derechos reservados.
+      </p>
+    </div>
+    <div class="footer-content d-flex justify-content-center">
+      <p class="footer-text small m-2">
+        <a href="aviso-politica.html" class="aviso-politica">
+          Aviso legal / Política de privacidad
+        </a>
+      </p>
+    </div>
+  </footer>
+
+    <!-- Enlaces a librerias bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

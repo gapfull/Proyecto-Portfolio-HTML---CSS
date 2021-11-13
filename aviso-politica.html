@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<!-- Pagina web Portfolio: Gonzalo Arechavala -->
+<!-- Esta pagina utiliza solo HTML y CSS, tanto propio como de Bootstrap -->
+
+<html>
+
+<head>
+    <!-- Cabecera HTML -->
+    <meta charset="utf-8">
+    <title>UpgradeCarS - Práctica Portfolio: Gonzalo Arechavala</title>
+    <!-- Enlaces a estilos -->
+    <link rel="icon" type="image/x-icon" href="./images/GAPlogo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Enlaces a fuentes de Google. Carga en CSS Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600;700&family=Mochiy+Pop+P+One&display=swap">
+    <!-- Enlaces para iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Cabecera página web -->
+    <header>
+        <!-- Barra de navegación responsive con menú hamburguesa -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <!-- Logotipo: Cambia de tamaño por CSS al cambiar las dimensiones de las pantallas -->
+                <a class="navbar-brand mx-auto" href="index.html">
+                    <img src="./images/upgradecar.svg" alt="UpgradeCarS" id="logotipo"
+                        class="d-inline-block align-text-top">
+                </a>
+
+                <!-- Boton hamburguesa para pantalla pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de la página -->
+                <div class="collapse navbar-collapse nav justify-content-end px-3" id="navbarNav">
+                    <ul class="navbar-nav nav-pills fw-bolder col-12">
+                        <li class="nav-item">
+                            <a class="nav-link menu-activado" aria-current="page" href="fabrica_alemania.html">
+                                <ul class="elementos-menu">
+                                    <li>Alemania </li>
+                                    <li><span>(1938-1978)</span></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fabrica_brasil.html">
+                                <ul class="elementos-menu">
+                                    <li>Brasil </li>
+                                    <li><span>(1959-1996)</span></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fabrica_mexico.html">
+                                <ul class="elementos-menu">
+                                    <li>México </li>
+                                    <li><span>(1967-2003)</span></li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle elemento-menu-toggle" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Modelos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="vw-escarabajo_001.html">1971</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_002.html">1972</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_003.html">1973</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_004.html">1974</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_005.html">1975</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_006.html">1976</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_007.html">1977</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_008.html">1978</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_009.html">1979</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_010.html">1980</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_011.html">1981</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_012.html">1982</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_013.html">1983</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_014.html">1984</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_015.html">1985</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_016.html">1986</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_017.html">1987</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_018.html">1988</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_019.html">1989</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_020.html">1990</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_021.html">1991</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_022.html">1992</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_023.html">1993</a></li>
+                                <li><a class="dropdown-item" href="vw-escarabajo_024.html">1994</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">
+                                <ul class="elementos-menu">
+                                    <li>Contacto</li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner titulo de la página -->
+        <div class="row fondodiv img-avisolegal">
+            <h1>Reacondicionado Vintage VW Escarabajo</h1>
+            <p class="pretitulo">Piezas originales o de alta calidad con garantía de 24 meses</p>
+            <div>
+                <a class="pretitulo" href="contacto.html">
+                    <button type="button" class="btn btn-danger">¡Quiero uno!</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+    <main class="container">
+
+        <!-- Columnas de la página: pc 3 / tablet 2 / movil 1 -->
+        <div class="col-12">
+            <div class="row">
+
+                <!-- Sección texto ... -->
+                <section class="col-12 contenido-articulo">
+                    <article>
+                        <div class="">
+                            <h2 class="mb-3">Aviso Legal y Política de Privacidad</h2>
+                        </div>
+
+                        <aviso-legal class="aviso-legal">
+                            <h1>Política de Privacidad</h1>
+                            <p>Fecha de entrada en vigor de este Aviso de privacidad: 27 de agosto de 2018.</p>
+                            <p>En UPGRADECARS deseamos proteger y respetar tu privacidad, para lo cual adoptamos las
+                                medidas de seguridad establecidas en las normas legales. A continuación, te explicamos
+                                cómo y para qué recabamos tus datos. La información que nos proporcionas es
+                                confidencial, y solo será revelada en los casos contemplados a continuación y cuando una
+                                administración pública o judicial nos lo solicite o sea necesario en algún otro caso
+                                contemplado legalmente.</p>
+                            <p>Al crear una cuenta de usuario, al solicita información o al participar en una formación,
+                                nos estás facilitando directamente información como tu identidad o tu medio de pago.
+                                Asimismo, al visitar nuestra página web, usar nuestras cuentas de redes sociales, abrir
+                                tu correo electrónico, visualizar nuestros anuncios publicados en nuestros medios
+                                digitales o en los terceros desde tu ordenador, tu tableta, tu teléfono o desde
+                                cualquier otro dispositivo, nos estas facilitando de forma automatizada información
+                                sobre tus hábitos de navegación y sobre los dispositivos y software que utilizas.</p>
+                            <ol>
+                                <li>
+                                    <h2>1. ¿Quién es el responsable del tratamiento de tus datos?</h2>
+                                    <p>Denominación social: UPGRADECARS</p>
+                                    <p>CIF: B00000000</p>
+                                    <p>Dirección postal: Calle Orense 69 Bajo,28020 Madrid</p>
+                                    <p>Inscripción Registro Mercantil Madrid: Tomo 0, Libro: 0, Sección: 0, Hoja:
+                                        M0, Inscripción: 0</p>
+                                    <p>Teléfono: 600 000 000</p>
+                                    <p>Puedes contactar con nosotros si tienes alguna duda sobre cómo tratamos tu
+                                        información enviando un correo electrónico a privacidad@upgradecars.com</p>
+                                    <p>La política establecida en esta página es aplicable a los datos de los usuarios
+                                        recabados por UPGRADECARS a través de:</p>
+                                    <ul>
+                                        <li>
+                                            <p>medios no digitales como, por ejemplo, formularios en soporte papel;</p>
+                                        </li>
+                                        <li>
+                                            <p>medios digitales, como, por ejemplo, formularios online, correos
+                                                electrónicos, SMS, webs, blogs propiedad de UPGRADECARS, cuentas de
+                                                redes
+                                                sociales donde UPGRADECARS está presente o visualización de anuncios (en
+                                                adelante, medios digitales).</p>
+                                        </li>
+                                    </ul>
+                                    <p>A los efectos de esta política de privacidad, son usuarios, en general, las
+                                        personas que:</p>
+                                    <ul>
+                                        <li>
+                                            <p>nos facilitan información al cumplimentar cualquiera de los formularios
+                                                disponibles, al crear una cuenta en UPGRADECARS, al solicitar una
+                                                formación
+                                                u otro servicio o al participar en las promociones que desarrollamos,
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>usan los medios digitales de UPGRADECARS.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>2. ¿Con qué finalidades tratamos la información?</h2>
+                                    <p>Tratamos tus datos personales para las siguientes finalidades:</p>
+                                    <h3>2.1. Navegar por la web y utilizar nuestros medios digitales</h3>
+                                    <p>Tratamos la información para permitir y facilitarte el acceso y navegación a
+                                        nuestros medios digitales. Por ejemplo, para ofrecerte la versión de página web
+                                        o aplicación que mejor se adapte a las características del dispositivo desde el
+                                        que accedes, a su idioma, etc., así como para prestarte los servicios que
+                                        ofrecemos a través de los mismos como, por ejemplo, información sobre las
+                                        formaciones que ofrecemos, acceso a contenidos especializados o remitirte
+                                        comunicaciones por correo electrónico, SMS o Whatsapp.</p>
+                                    <h3>2.2. Gestionar los servicios que nos solicites</h3>
+                                    <p>En estos casos tratamos la información que nos facilitas, por ejemplo, para
+                                        prestarte la formación que nos solicites, para que puedas acceder a contenidos
+                                        especializados, para que puedas obtener los descuentos que ofrecemos o
+                                        participar en las promociones que realizamos, así como para resolver las
+                                        cuestiones y reclamaciones que nos plantees sobre los servicios que prestamos a
+                                        través de los medios que están a tu disposición.</p>
+                                    <h3>2.3. Mejorar los servicios que ofrecemos y la seguridad</h3>
+                                    <p>Otros de los usos para los que empleamos la información es para realizar análisis
+                                        del uso de nuestros medios, análisis del éxito de nuestras formaciones y
+                                        análisis de los resultados de las acciones publicitarias que realizamos, todo
+                                        ello para lograr el mantenimiento, la mejora y la eficacia de nuestros
+                                        servicios, proteger mejor la seguridad de tus datos y de nuestros medios
+                                        digitales y detectar y prevenir el fraude, todo ello a través de la realización
+                                        de informes estadísticos basados en la información que nos facilitas y que
+                                        generas al utilizar nuestros servicios y medios digitales o al visualizar
+                                        nuestros anuncios.</p>
+                                    <h3>2.4. Realizar publicidad de nuestros productos en nuestros medios digitales y de
+                                        terceros</h3>
+                                    <p>La información que tratamos la usamos para enviarte publicidad de nuestras
+                                        formaciones a través de correo electrónico, SMS, Whatsapp y del resto de medios
+                                        digitales de los que disponemos, tanto sin segmentar como de manera segmentada,
+                                        de acuerdo con los datos de los que disponemos sobre tu perfil. Para la
+                                        realización de la segmentación, tratamos datos de terceros obtenidos a través de
+                                        distintas fuentes, como redes sociales, herramientas de geomarketing o a partir
+                                        de tus hábitos de navegación por nuestros medios digitales o de terceros, con la
+                                        finalidad de obtener una mayor información sobre tus características
+                                        socioeconómicas, gustos y hábitos.</p>
+                                    <p>También tratamos la información mencionada de tu perfil para enviarte publicidad
+                                        segmentada y no segmentada sobre nuestros productos y servicios a través de
+                                        otros medios digitales de los que no somos propietarios como, por ejemplo, en
+                                        periódicos o revistas digitales, en blogs especializados, apps móviles o en
+                                        redes sociales.</p>
+                                    <h3>2.5. Cumplir con obligaciones legales y otros requerimientos</h3>
+                                    <p>Finalmente, también es necesario tratemos tus datos para el cumplimiento de
+                                        nuestras obligaciones legales establecidas, por ejemplo, en la normativa fiscal,
+                                        la de protección de datos o en la de servicios de la sociedad de la información,
+                                        así como para atender los requerimientos que se nos soliciten desde las
+                                        autoridades públicas.</p>
+                                </li>
+                                <li>
+                                    <h2>3. ¿De dónde procede y qué información que tratamos?</h2>
+                                    <p>La información que tratamos para elaborar tu perfil procede de:</p>
+                                    <h3>3.1. Datos que nos has facilitado directamente</h3>
+                                    <p>En estos casos, la información nos la has facilitado tú directamente a través de
+                                        los formularios que figuran en nuestros medios, ya sean digitales o en formato
+                                        papel. Es información como tu nombre, apellidos, dirección de correo
+                                        electrónico, número de teléfono o tu tarjeta de crédito.</p>
+                                    <h3>3.2. Datos recabados de forma automatizada a través de cookies</h3>
+                                    <p>Igualmente, recabamos datos de forma automatizada a través de cookies sobre la
+                                        navegación y uso que haces de nuestra web, de nuestras cuentas de redes
+                                        sociales, de nuestros correos electrónicos, Whatsapp o SMS, sobre la
+                                        visualización de los anuncios publicados en nuestros medios digitales o en otros
+                                        medios de terceros y sobre los comentarios, opiniones e interacciones con
+                                        nuestras cuentas en redes sociales, como por ejemplo, las opciones de “me gusta”
+                                        que realices desde tu perfil o cuando te hayas hecho seguidor de nuestras
+                                        cuentas en redes sociales.</p>
+                                    <p>En estos casos, la información que recabamos se refiere a los datos de contexto y
+                                        hábitos de navegación y uso en nuestros medios digitales o de terceros, de las
+                                        consultas de búsqueda, de la visualización de los anuncios como, por ejemplo, la
+                                        versión del navegador, la dirección IP, los sitios que has visitado, la hora de
+                                        apertura de los correos electrónicos, las páginas o secciones de nuestra web,
+                                        cuentas de redes sociales que has visitado, desde qué lugar te conectas, el
+                                        terminal donde has visto el anuncio y la hora a la que lo has visto, el lugar o
+                                        la página web desde donde accedes, la red social, periódico digital o medio
+                                        digital donde visualizas el anuncio, los comentarios que realizas en una red
+                                        social donde estemos, la hora o el contenido del mismo.</p>
+                                    <h3>3.3. Datos de redes sociales</h3>
+                                    <p>En redes sociales, tenemos acceso a los perfiles sociales de las personas o
+                                        entidades que deciden seguir nuestras cuentas de redes sociales. Accedemos a la
+                                        información disponible según el nivel de privacidad que cada usuario haya
+                                        marcado en cada red, por ejemplo, si no haces público tu email a otros
+                                        contactos, no lo veremos.</p>
+                                </li>
+                                <li>
+                                    <h2>4 .¿Qué son las cookies?</h2>
+                                    <p>Para la obtención automatizada de los datos antes descritos utilizamos distintas
+                                        técnicas para su captación como, por ejemplo, cookies.</p>
+                                    <p>Una cookie es un dato, fichero o dispositivo de almacenamiento y recuperación de
+                                        datos (DARD), que se descarga en tu dispositivo al acceder a nuestras páginas
+                                        web, cuentas de redes sociales o al recibir un correo electrónico. Las cookies
+                                        permiten almacenar y recuperar de forma automatizada datos sobre tu perfil, el
+                                        uso que haces de los citados medios digitales y del equipo o dispositivo desde
+                                        el que accedes a los mismos.</p>
+                                    <p>Existen diferentes tipos de cookies, como:</p>
+                                    <ul>
+                                        <li>
+                                            <p>Cookies propias: son aquéllas que se envían a tu dispositivo desde un
+                                                dominio gestionado por nosotros desde donde prestamos nuestros servicios
+                                                y
+                                                donde esté alojada nuestra página web o nuestro servicio de correo
+                                                electrónico.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies de terceros: son aquéllas que se envían a tu dispositivo desde un
+                                                equipo o dominio que no es gestionado por nosotros, sino por otra
+                                                entidad
+                                                con la finalidad de que nos preste un servicio y, en algunos casos, para
+                                                usar ellas mismas la información generada para prestar sus propios
+                                                servicios
+                                                a terceros, todo ello de acuerdo con un contrato que hemos celebrado con
+                                                esa
+                                                entidad con la finalidad, entre otras, de que trate de forma controlada
+                                                la
+                                                información a la puede acceder.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies de sesión: son un tipo de cookies diseñadas para recabar y
+                                                almacenar
+                                                datos durante el tiempo en que accedes a una página web, servicio,
+                                                correo
+                                                electrónico o red social.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies persistentes: son un tipo de cookies en el que los datos siguen
+                                                almacenados en tu dispositivo y pueden ser accedidos y tratados durante
+                                                un
+                                                periodo definido por la entidad responsable de la cookie, que puede ir
+                                                de
+                                                unos minutos a varios años.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies de análisis: son aquéllas que, bien tratadas por nosotros o por
+                                                terceros, nos permiten cuantificar y calificar a los usuarios de
+                                                nuestras
+                                                webs, blogs, correos electrónicos o redes sociales en las que estamos
+                                                presentes para realizar la medición y análisis estadístico de la
+                                                utilización
+                                                que hacen los usuarios de los mismos.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies publicitarias: son aquéllas que permiten la gestión de forma
+                                                eficaz
+                                                de los espacios publicitarios que incluimos en sus propios medios
+                                                digitales,
+                                                de acuerdo con criterios no comportamentales de los usuarios, como el
+                                                contenido de la web o la frecuencia en la que se muestran los anuncios.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies de publicidad comportamental: son aquéllas que permiten la
+                                                gestión
+                                                de forma eficaz los espacios publicitarios que tenemos en nuestros
+                                                medios
+                                                digitales, webs, blogs, apps o correos electrónicos y en otros soportes
+                                                publicitarios de terceros en base al comportamiento y utilización de los
+                                                servicios por parte de nuestros usuarios, obtenida a través de la
+                                                observación continuada del uso de nuestros servicios o de terceros, lo
+                                                que
+                                                permite desarrollar un perfil específico para mostrar publicidad en
+                                                función
+                                                del mismo.</p>
+                                        </li>
+                                        <li>
+                                            <p>Cookies de redes sociales: son aquéllas que ofrecen la posibilidad de
+                                                conectarse a las mismas y compartir contenidos con nosotros y otros
+                                                usuarios
+                                                de las redes, gestionar los espacios publicitarios existentes en las
+                                                mismas
+                                                y obtener información de tu perfil y sobre el uso que haces de nuestras
+                                                cuentas en redes sociales.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2>5. ¿Cuáles son tus derechos en relación con la información que tratamos</h2>
+                                    <h3>5.1. En general</h3>
+                                    <p>Tienes los siguientes derechos en relación con tus datos:</p>
+                                    <ul>
+                                        <li>
+                                            <p>Derecho a saber si estamos tratando tus datos personales, a acceder a
+                                                ellos
+                                                y a solicita información acerca de cómo y por qué los tratamos y, en su
+                                                caso, solicitar una copia.</p>
+                                        </li>
+                                        <li>
+                                            <p>Derecho a rectificar y modificar los datos cuando no sean correctos o
+                                                sean
+                                                inexactos y solicitar su supresión, cuando ya no sean necesarios para
+                                                los
+                                                fines para los que los recogimos.</p>
+                                        </li>
+                                        <li>
+                                            <p>Por motivos relacionados con tu situación particular, tienes derecho a
+                                                oponerte a que tratemos tus datos y, en su caso, a revocar el
+                                                consentimiento
+                                                que nos hayas dado para ello.</p>
+                                        </li>
+                                        <li>
+                                            <p>En determinadas circunstancias, tienes derecho a solicitar que limitemos
+                                                el
+                                                tratamiento de tus datos, en cuyo caso únicamente los conservaremos para
+                                                el
+                                                ejercicio y defensa de reclamaciones, para aquello para lo que nos des
+                                                tu
+                                                consentimiento o para atender responsabilidades legales.</p>
+                                        </li>
+                                        <li>
+                                            <p>Derecho a presentar una reclamación ante la Agencia Española de
+                                                Protección
+                                                de Datos, tal y como se informa a través de su página web.</p>
+                                        </li>
+                                    </ul>
+                                    <p>El ejercicio y alcance de tus derechos está regulado por la normativa aplicable.
+                                    </p>
+                                    <p>Puedes ejercer tus derechos enviando un un correo electrónico a
+                                        privacidad@upgradecars.com o por correo postal a la dirección UPGRADECARS C/
+                                        Orense 69 28020 Madrid</p>
+                                    <h3>5.2. Respecto a los datos de redes sociales</h3>
+                                    <p>Si deseas controlar la información que obtenemos automáticamente de redes
+                                        sociales puedes hacerlo a través de las opciones de tu perfil en cada una de las
+                                        redes sociales donde tienes una cuenta. Para ello, deberás iniciar sesión en la
+                                        red social y gestionar desde tu perfil de usuario la información que permites
+                                        que la red haga pública y a quién permites el acceso a la misma.</p>
+                                    <h3>5.3. Respecto a los datos que obtenemos mediante cookies</h3>
+                                    <p>Si deseas que no utilicemos cookies para analizar el uso que haces de nuestros
+                                        servicios automáticamente, puedes pulsar aquí:</p>
+                                    <ul>
+                                        <li>
+                                            <p>Para Google Analytics:</p>
+                                            <p>https://developers.google.com/analytics/devguides/collection/gajs/#disable
+                                                https://developers.google.com/analytics/devguides/collection/analyticsjs/user-opt-out
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Para Google Tags:</p>
+                                            <p>https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <p>Si deseas controlar bloquear por completo el uso de cookies tanto en este sitio
+                                        web como en cualquier otro, puedes hacerlo a través de las opciones de control
+                                        de tu navegador o de los ajustes de tu móvil u otro dispositivo con el que
+                                        accedas a nuestros medios digitales. Por ejemplo, lo puedes hacer desde estos
+                                        enlaces a través de las opciones de privacidad de:</p>
+                                    <ul>
+                                        <li>Google Chrome</li>
+                                        <li>Mozilla Firefox</li>
+                                        <li>Internet Explorer</li>
+                                        <li>Safari</li>
+                                        <li>Safari para IOS (iPhone y iPad)</li>
+                                        <li>Chrome para Android</li>
+                                    </ul>
+                                    <p>Ten en cuenta que algunas funcionalidades de esta página web pueden requerir el
+                                        uso de cookies.</p>
+                                </li>
+                                <li>
+                                    <h2>6. ¿Durante cuánto tiempo conservaremos la información?</h2>
+                                    <p>Mantendremos la información mientras sea necesario para la gestión de la
+                                        solicitud que nos realices o para la prestación del servicio o formación que nos
+                                        solicites y para las finalidades para las que fue recabada, mientras no revoques
+                                        tu consentimiento o no nos solicites su supresión. No obstante, cuando nos
+                                        solicites por los medios establecidos la supresión de tus datos, estos se
+                                        mantendrán debidamente bloqueados sin que los usemos, mientras puedan ser
+                                        necesarios para el ejercicio o defensa de reclamaciones o pueda derivarse de su
+                                        tratamiento algún tipo de responsabilidad legal o contractual para lo cual sea
+                                        necesaria su recuperación. Una vez transcurrido este plazo de tiempo, tus datos
+                                        serán eliminados definitivamente. En los casos en los que obtenemos datos
+                                        automáticamente a través de cookies, ten en cuenta que algunas pueden estar
+                                        activas durante años, no obstante, puedes limitar su uso en el tiempo
+                                        eliminándolas de los navegadores o dispositivos a través de los enlaces
+                                        mencionados en el apartado sobre tus derechos.</p>
+                                </li>
+                                <li>
+                                    <h2>7. ¿Cuál es la legitimación para el tratamiento de la información?</h2>
+                                    <p>Tratamos tus datos en base al cumplimiento del contrato que acordemos cuando los
+                                        tratemos para prestarte la formación u otros servicios que nos solicites. En
+                                        base a nuestro interés legítimo o, en su caso, a tu consentimiento los podremos
+                                        tratar para el resto de finalidades, como el envío de publicidad sobre nuestras
+                                        formaciones y servicios o para mejorar nuestra oferta y para prestarte la
+                                        formación o cualquier otro servicio que nos solicites</p>
+                                </li>
+                                <li>
+                                    <h2>8. ¿Dónde guardamos tus datos y quién tiene acceso a la información?</h2>
+                                    <p>Protegemos la información que recabamos estableciendo las medidas de seguridad
+                                        técnicas y administrativas señaladas en las normas legales, de forma que la
+                                        información queda protegida contra el acceso, la indisponibilidad, la
+                                        divulgación o el uso no autorizado. </p>
+
+                                    <p>A tu información personal únicamente pueden
+                                        acceder nuestros trabajadores, los cuales son conocedores de los usos para los
+                                        que pueden utilizarla y sus limitaciones, las autoridades públicas y judiciales
+                                        competentes cuando nos los requieran y así lo exija la normativa aplicable y
+                                        otras empresas proveedoras para prestarte los servicios que nos hayas solicitado
+                                        como, por ejemplo, los profesores o colaboradores externos que puedan impartir
+                                        una formación, la empresa titular la de la herramienta de gestión de base de
+                                        datos o la de gestión de envío de correos electrónicos. </p>
+
+                                    <p>Con cada de una de estas
+                                        empresas hemos celebrado un contrato de confidencialidad a través del cual se
+                                        comprometen a utilizar única y exclusivamente tus datos con estas finalidades y
+                                        a no utilizarlos para ninguna otra, de forma que una vez que se dé por
+                                        finalizada la prestación del servicio están obligadas a eliminar la información
+                                        que hayan obtenido o conservarla debidamente bloqueada y protegida sin que
+                                        puedan usarla, mientras pueda ser necesaria para el cumplimiento de una
+                                        obligación legal, para el ejercicio o defensa de reclamaciones contractuales que
+                                        deban ser atendidas. </p>
+
+                                    <p>En los casos en que estas empresas se encuentren en algún
+                                        país que no ofrezca un nivel de protección de datos similar al nuestro, nos
+                                        aseguramos de que las mismas cumplen con las medidas de seguridad necesarias y
+                                        equivalentes a las que tenemos nosotros, establecidas en las normas legales
+                                        aplicables. </p>
+                                    <p>Asimismo, para tratar la información que obtenemos de forma
+                                        automatizada sobre la forma y uso que haces de nuestros servicios, medios
+                                        digitales, tus dispositivos o de los anuncios que publicamos en nuestros medios
+                                        digitales o de terceros, utilizamos las cookies de medición de Google Analytics
+                                        y Google Tags. Google puede utilizar estos datos para mejorar sus propios
+                                        servicios y para ofrecer servicios a otras empresas.
+
+                                    <p>Puedes conocer la política
+                                        de privacidad de Google y cómo utilizan sus cookies en esta página web. La
+                                        información que obtiene está relacionada con el número de páginas visitas, el
+                                        idioma, red social en la que se publican nuestras noticias, la ciudad o región a
+                                        la que está asignada la dirección IP desde la que accedes, el número de nuevos
+                                        usuarios, la frecuencia y reincidencia de las visitas, el tiempo de visita, el
+                                        navegador y el operador o tipo de terminal desde el que se realiza la visita.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>9. Cambios en la política de privacidad y cookies</h2>
+                                    <p>Podemos actualizar unilateralmente la información establecida en esta página. Las
+                                        actualizaciones son debidas a cambios tecnológicos, normativos o la oferta de
+                                        nuevos servicios que afectan a la política de privacidad y cookies.</p>
+                                </li>
+                            </ol>
+                        </aviso-legal>
+
+                    </article>
+                </section>
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Pie de la página web -->
+    <footer class="m-5">
+
+        <!-- Logo pie de página -->
+        <div class="footer-content d-flex justify-content-center">
+            <img class="footer-img m-3" src='./images/upgradecar.svg' id="logopie">
+        </div>
+
+        <!-- Div de Newsletter -->
+        <div class="container">
+            <div>
+                <h3 class="text-center newsletter">Subscríbete a nuestra Newsletter</h3>
+            </div>
+            <div class="row align-items-start">
+
+                <!-- Columna Izquierda -->
+                <div class="col-0 col-lg-4 col-md-2 col-sm-1"></div>
+
+                <!-- Pintamos un formulario en la columna central-->
+                <div class="col-12 col-lg-4 col-md-8 col-sm-10 mt-1 mb-5">
+                    <form class="form-inline" method="post" action="#">
+                        <div class="col-12 col">
+                            <input type="checkbox"> Acepto <a href="aviso-politica.html" class="aviso-politica"> Aviso
+                                legal y Política
+                                de privacidad.</a>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-8 contacto-news"><input class="form-control" type="email"
+                                    name="email" placeholder="Escribe tu Email"></div>
+                            <div class="form-group col-4 contacto-news"><button class="btn btn-enviar"
+                                    type="button">Subscribirse</button></div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div class="col-0 col-lg-4 col-md-2 col-sm-1"></div>
+            </div>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-content d-flex justify-content-center">
+            <p class="footer-text m-2">
+                Síguenos en: <a href="https://www.facebook.com/VwKaferClubEspana/" target="blanc"
+                    class="text-white text-decoration-none mx-3">
+                    <i class="bi bi-facebook"></i> Facebook</a> / <a
+                    href="https://www.instagram.com/vw.escarabajo/?hl=es" target="blanc"
+                    class="text-white text-decoration-none mx-3"><i class="bi bi-instagram"></i> Instagram</a>
+            </p>
+        </div>
+
+        <!-- Derechos y politicas -->
+        <div class="footer-content d-flex justify-content-center">
+            <p class="footer-text m-2">
+                2021 UpgradeCarS | Todos los derechos reservados.
+            </p>
+        </div>
+        <div class="footer-content d-flex justify-content-center">
+            <p class="footer-text small m-2">
+                <a href="aviso-politica.html" class="aviso-politica">
+                    Aviso legal / Política de privacidad
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Enlaces a librerias bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
